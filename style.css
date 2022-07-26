@@ -97,8 +97,9 @@ img {
 #search-form p {
     margin-top: 30px;
     margin-bottom: 60px;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(77, 76, 76);
 }
 
 #search-form input, #search-form select {
@@ -565,3 +566,108 @@ footer .wrapper::after {
     font-weight: 600;
     margin-top: 40px;
 }
+
+@media screen and (max-width: 1024px) {
+    .img {
+        margin-left: 20px;
+    }
+
+	.nav-container ul {
+        margin-right: 50px;
+		text-align: center;
+		padding: 0;
+	}
+
+	.nav-container ul li {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		display: inline-block;
+		margin: 0 10px;
+	}
+
+    #main-banner {
+        padding-top: 2em;
+        padding-bottom: 5em; 
+        }
+
+	#search-form {
+		padding-top: 10em;
+		padding-bottom: 2em;
+	}
+
+    #search-form h1 {
+		font-size: 34px;
+        text-shadow: 0.5px 0.5px #000;
+	}
+
+	#search-form form {
+		width: 60%;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#search-form form input, #search-form select {
+		display: block;
+		margin: 0;
+		margin-bottom: 25px;
+		width: 100%;
+		border-width: 0;
+		padding: 10px 20px;
+		box-sizing: border-box;
+	}
+
+	#lastjobs-container.wrapper, #status-container.wrapper, #lastjobs-container.wrapper, #blog-container.wrapper, .wrapper {
+		max-width: 960px;
+        padding-top: 20px;
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+    #testmony-container {
+        padding-top: 2em;
+    }
+
+    footer {
+        padding-top: 3em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .clickarea {
+        font-size: 13px;
+    }
+
+    #main-banner {
+        padding-top: 3em;
+    }
+
+    #sendjobs-inner h2, #sendjobs-inner p {
+        text-shadow: 0.5px .05px #000;
+    } 
+
+    .status-box {
+        width: 49.4%;
+        border: none;
+    }
+
+    .status-box:nth-child(1), .status-box:nth-child(3) {
+        border-right: 1px solid #DDD;
+    } 
+
+    .testmony-container {
+        padding-top: 5em;
+    }
+
+    .testmony-box {
+        width: 49.4%;
+    }
+
+    .article-box {
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin-bottom: 3em;
+    }
