@@ -635,6 +635,10 @@ footer .wrapper::after {
         padding-top: 2em;
     }
 
+    .google {
+        font-size: 13px;
+    }
+
     footer {
         padding-top: 3em;
     }
