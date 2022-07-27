@@ -25,6 +25,10 @@ header {
     width: 100%;
 }
 
+.nav-container .btn-menumobile {
+    display: none;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -42,7 +46,7 @@ nav::after {
 }
 
 img {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .nav-container {
@@ -278,6 +282,7 @@ img {
 #sendjobs-container h2, #sendjobs-container p {
      width: 600px;
      color: #FFF;
+     text-shadow: 0.5px 0.5px #000;
 }
 
 #sendjobs-container h2 {
@@ -303,7 +308,7 @@ img {
 }
 
 .light-btn:hover {
-    background-color: transparent;
+    background-color: #666;
     color: #FFF;
 }
 
@@ -641,11 +646,11 @@ footer .wrapper::after {
     }
 
     #main-banner {
-        padding-top: 3em;
+        padding-top: 20px;
     }
 
     #sendjobs-inner h2, #sendjobs-inner p {
-        text-shadow: 0.5px .05px #000;
+        text-shadow: 0.5px 0.5px #000;
     } 
 
     .status-box {
@@ -671,3 +676,110 @@ footer .wrapper::after {
         padding: 0;
         margin-bottom: 3em;
     }
+}
+
+@media screen and (max-width: 576px) {
+    .nav-container .btn-menumobile {
+        display: block !important;
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        height: 4em;
+    }
+
+    #logo {
+        left: 2em;
+        height: 2em;
+        width: 2em;
+        margin-top: 1em;
+    }
+
+    .btn-menumobile {
+        display: block;
+        font-size: 1.75em;
+        color: #CCC;
+        position: absolute;
+        right: 1.5em;
+        top: 0.75em;
+    }
+
+    .nav-container ul {
+        position: relative;
+        top: 4em;
+        height: 3em;
+        line-height: 3em;
+        display: none;
+    }
+
+    .nav-container ul li {
+        display: block;
+        background-color: #FFF;
+        margin: 0;
+        border-top: 1px solid #CCC;
+    }
+
+    .nav-container ul li a {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .open {
+        display: block !important;
+    }
+
+    #main-banner {
+        margin-top: 2em;
+    }
+
+    #search-form {
+        padding-top: 14em;
+        padding-bottom: 5em;
+        width: 100%;
+    }
+
+    #search-form h1 {
+        font-size: 1.6em;
+    }
+
+    #search-form p {
+        font-size: 1em;
+        margin-bottom: 2em;
+    }
+
+    #search-form form {
+        width: 80%;
+    }
+
+    #search-form input[type=submit] {
+        margin-bottom: 0;
+    }
+
+    #last-jobs-container {
+        padding: 5em 0;
+    }
+
+    .locality {
+        display: none;
+    }
+
+    .company-box .company-info {
+        margin-top: 1em;
+        width: 8em;
+    }
+
+    .company-box .company-info h3 {
+        font-size: 1em;
+    }
+
+    .company-box .company-info h3 p {
+        margin-left: 5px;
+    }
+
+    .job-type {
+        width: 22%;
+    }
+}
