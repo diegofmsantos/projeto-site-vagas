@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Vagas - Envie Sua Vaga</title>
+    <title>Site de Vagas</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container" id="sendjobs">
+    <div class="container" id="jobpage">
         <header>
             <nav>
                 <div class="nav-container">
@@ -26,38 +26,79 @@
                 </div>
             </nav>
         </header>
-
-        <main id="sendjobs-container" class="wrapper">
-            <h1>Preencha os dados da vaga</h1>
-            <form method="post">
-                <div class="input-box">
-                    <label>Título da vaga <span class="required">*</span></label>
-                    <input type="text" name="jobtitle" placeholder="Insira o título da vaga">
-                </div>
-                <div class="input-box">
-                    <label>Descrição da vaga <span class="required">*</span></label>
-                    <textarea type="text" name="description" placeholder="Insira a descrição da vaga"></textarea>
-                </div>
-                <div class="input-box">
-                    <label>Nome da empresa <span class="required">*</span></label>
-                    <input type="text" name="company" placeholder="Nome da empresa">
-                </div>
-                <div class="input-box">
-                    <label>Tipo de contratação <span class="required">*</span></label>
-                    <select name="jobtype">
-                        <option value="">Escolha uma opção</option>
-                        <option value="pj">PJ</option>
-                        <option value="clt">CLT</option>
-                        <option value="homeoffice">Home Office</option>
-                        <option value="freelancer">Freelancer</option>
-                    </select>
-                </div>
-                <div class="input-box">
-                    <input type="submit" value="Enviar">
-                </div>
-            </form>
+       <div id="job-header">
+        <h1>Developer</h1>
+        <div id="job-info">
+            <div class="job-type">
+                <span class="clt">CLT</span>
+            </div>
+            <div class="locality">
+                <p>Mountain View, Califórnia</p>
+            </div>
+            <div class="date">
+                <p>Enviada há 3 dias</p>
+            </div>
+        </div>
+       </div>
+       <div class="wrapper">
+        <main id="job-container">
+            <div id="about-company-container">
+                <h2 class="page-title">Sobre a empresa</h2>
+                <img src="imagens/company.jpg" alt="Sobre o Google" id="company-img">
+                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis illum dolore consectetur impedit dolores enim ad, accusamus possimus harum nesciunt laudantium error voluptatem aliquam assumenda esse autem magni reiciendis laboriosam?</p>
+            </div>
+            <div id="about-job-container">
+                <h2 class="page-title">Sobre a vaga</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui velit hic laudantium incidunt dignissimos. Provident et porro asperiores saepe quis, cupiditate nulla esse, voluptate culpa voluptates, obcaecati animi? Iusto!</p>
+            </div>
+            <div id="min-requirements-container">
+                <h2 class="page-title">Requisitios mínimos da vaga</h2>
+                <ul class="jobpage-list">
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                </ul>
+            </div>
+            <div id="job-benefits-container">
+                <h2 class="page-title">Benefícios</h2>
+                <ul class="jobpage-list">
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                </ul>
         </main>
-       
+        <aside id="companyinfo-container">
+            <img src="imagens/googlelogo.png" alt="Logo Google">
+            <div class="job-type">
+                <span class="clt">CLT</span>
+            </div>
+            <a id="apply-btn" href="#">Candidatar-se</a>
+            <div class="companysocial-container">
+                <ul id="job-social-list">
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <span>Linkedin</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
         <footer>
             <div class="wrapper">
                 <div class="footer-box">
